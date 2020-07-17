@@ -14,6 +14,10 @@ class ViewController3: UIViewController {
     @IBOutlet weak var targetSchools: UILabel!
     @IBOutlet weak var reachSchools: UILabel!
     @IBOutlet weak var homeButton: UIButton!
+    
+    @IBOutlet weak var actLabel: UILabel!
+    @IBOutlet weak var satLabel: UILabel!
+    @IBOutlet weak var gpaLabel: UILabel!
     var previousVC = ViewController2()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,23 @@ class ViewController3: UIViewController {
         safetySchools.text = newStudent.schoolsToString()[0]
         targetSchools.text = newStudent.schoolsToString()[1]
         reachSchools.text = newStudent.schoolsToString()[2]
+        
+        if newStudent.actSubmit {
+            actLabel.text = String(Int(newStudent.act))
+        }
+        else {
+            actLabel.text = "N/A"
+        }
+        
+        if newStudent.satSubmit {
+            satLabel.text = String(Int(newStudent.sat))
+        }
+        else {
+            satLabel.text = "N/A"
+        }
+        
+        gpaLabel.text = String(newStudent.gpa)
+        
         homeButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }

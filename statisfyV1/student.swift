@@ -52,31 +52,62 @@ class student {
         // void, appends values for safety, target, reach
         
         for uni in unis {
-            if uni.accRate <= 15 {
-                reach.append(uni.name)
-            }
-            else if uni.accRate <= 25 {
-                if ((actSubmit && act >= uni.act75) || (satSubmit && sat >= uni.sat75)) {
-                    target.append(uni.name)
-                }
-                else {
+            if (satSubmit || actSubmit) {
+                if uni.accRate <= 15 {
                     reach.append(uni.name)
                 }
-            }
-            else if uni.accRate <= 40 {
-                if ((actSubmit && act >= uni.avgACT) || (satSubmit && sat >= uni.avgSAT)) {
-                    safety.append(uni.name)
+                else if uni.accRate <= 25 {
+                    if (((actSubmit && act >= uni.act75) || (satSubmit && sat >= uni.sat75)) && gpa >= uni.avgGPA) {
+                        target.append(uni.name)
+                    }
+                    else {
+                        reach.append(uni.name)
+                    }
+                }
+                else if uni.accRate <= 40 {
+                    if (((actSubmit && act >= uni.avgACT) || (satSubmit && sat >= uni.avgSAT)) && gpa >= uni.avgGPA) {
+                        safety.append(uni.name)
+                    }
+                    else {
+                        target.append(uni.name)
+                    }
                 }
                 else {
-                    target.append(uni.name)
+                    if (((actSubmit && act >= uni.act25) || (satSubmit && sat >= uni.sat25)) && gpa >= uni.avgGPA) {
+                        safety.append(uni.name)
+                    }
+                    else {
+                        target.append(uni.name)
+                    }
                 }
             }
             else {
-                if ((actSubmit && act >= uni.act25) || (satSubmit && sat >= uni.sat25)) {
-                    safety.append(uni.name)
+                if uni.accRate <= 20 {
+                    reach.append(uni.name)
                 }
+                else if uni.accRate <= 40 {
+                    if gpa >= uni.avgGPA + 0.1 || (uni.avgGPA >= 3.9 && gpa > uni.avgGPA) || (gpa == 4.0) {
+                        target.append(uni.name)
+                    }
+                    else {
+                        reach.append(uni.name)
+                    }
+                }
+                else if uni.accRate <= 50 {
+                    if gpa >= uni.avgGPA + 0.05 {
+                        safety.append(uni.name)
+                    }
+                    else {
+                        target.append(uni.name)
+                    }
+                    }
                 else {
-                    target.append(uni.name)
+                    if gpa >= uni.avgGPA {
+                        safety.append(uni.name)
+                    }
+                    else {
+                        target.append(uni.name)
+                    }
                 }
             }
         }
