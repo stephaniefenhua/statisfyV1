@@ -26,7 +26,6 @@ class ViewController3: UIViewController {
         safetySchools.text = newStudent.schoolsToString()[0]
         targetSchools.text = newStudent.schoolsToString()[1]
         reachSchools.text = newStudent.schoolsToString()[2]
-        
         if newStudent.actSubmit {
             actLabel.text = String(Int(newStudent.act))
         }
