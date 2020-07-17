@@ -10,6 +10,7 @@
 		82156C9E24C0C30400D2BDDD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82156C9D24C0C30400D2BDDD /* ViewController2.swift */; };
 		82156CA024C0CAD600D2BDDD /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82156C9F24C0CAD600D2BDDD /* ViewController3.swift */; };
 		82156CA224C0ECC100D2BDDD /* student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82156CA124C0ECC100D2BDDD /* student.swift */; };
+		82156CA424C1003800D2BDDD /* university.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82156CA324C1003800D2BDDD /* university.swift */; };
 		829BBAA724BCDE0C0054D4CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BBAA624BCDE0C0054D4CE /* AppDelegate.swift */; };
 		829BBAA924BCDE0C0054D4CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BBAA824BCDE0C0054D4CE /* SceneDelegate.swift */; };
 		829BBAAB24BCDE0C0054D4CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BBAAA24BCDE0C0054D4CE /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		82156C9D24C0C30400D2BDDD /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		82156C9F24C0CAD600D2BDDD /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		82156CA124C0ECC100D2BDDD /* student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = student.swift; sourceTree = "<group>"; };
+		82156CA324C1003800D2BDDD /* university.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = university.swift; sourceTree = "<group>"; };
 		829BBAA324BCDE0C0054D4CE /* statisfyV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = statisfyV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829BBAA624BCDE0C0054D4CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		829BBAA824BCDE0C0054D4CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				82156C9D24C0C30400D2BDDD /* ViewController2.swift */,
 				82156C9F24C0CAD600D2BDDD /* ViewController3.swift */,
 				82156CA124C0ECC100D2BDDD /* student.swift */,
+				82156CA324C1003800D2BDDD /* university.swift */,
 				829BBAAC24BCDE0C0054D4CE /* Main.storyboard */,
 				829BBAAF24BCDE150054D4CE /* Assets.xcassets */,
 				829BBAB124BCDE150054D4CE /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 				82156CA024C0CAD600D2BDDD /* ViewController3.swift in Sources */,
 				829BBAAB24BCDE0C0054D4CE /* ViewController.swift in Sources */,
 				82156C9E24C0C30400D2BDDD /* ViewController2.swift in Sources */,
+				82156CA424C1003800D2BDDD /* university.swift in Sources */,
 				829BBAA724BCDE0C0054D4CE /* AppDelegate.swift in Sources */,
 				829BBAA924BCDE0C0054D4CE /* SceneDelegate.swift in Sources */,
 				82156CA224C0ECC100D2BDDD /* student.swift in Sources */,

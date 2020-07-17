@@ -17,7 +17,8 @@ class ViewController3: UIViewController {
     var previousVC = ViewController2()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let newStudent = student(satScore: previousVC.sat, satSubmission: previousVC.satSub, actScore: previousVC.act, actSubmission: previousVC.actSub, gpaVal: previousVC.gpa)
+        let newStudent = student(satScore: Double(previousVC.sat), satSubmission: previousVC.satSub, actScore: Double(previousVC.act), actSubmission: previousVC.actSub, gpaVal: previousVC.gpa)
+        newStudent.getSchools()
         safetySchools.text = newStudent.schoolsToString()[0]
         targetSchools.text = newStudent.schoolsToString()[1]
         reachSchools.text = newStudent.schoolsToString()[2]
